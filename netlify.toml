@@ -1,6 +1,4 @@
 [build]
-  base="/"
-  functions="server/netlify/functions"
   build="yarn workspace client build"
   publish="client/build"
 
@@ -11,8 +9,4 @@
   force = true
   from = "/api/*"
   status = 200
-  to = ".netlify/functions/api/:splat"
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+  to = "/.netlify/functions/api/:splat"

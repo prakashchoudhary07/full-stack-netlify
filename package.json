@@ -5,7 +5,7 @@
   "private": true,
   "workspaces": [
     "client",
-    "server"
+    "netlify"
   ],
   "repository": "https://github.com/aps08/full-stack-netlify.git",
   "author": "aps08",
@@ -14,6 +14,6 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "start": "concurrently \"yarn workspace server start\" \"yarn workspace client start\""
+    "start": "concurrently \"cd netlify && yarn start\" \"yarn workspace client start\""
   }
 }
