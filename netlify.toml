@@ -1,4 +1,5 @@
 [build]
+  functions="netlify/functions"
   build="yarn workspace client build"
   publish="client/build"
 
