@@ -1,6 +1,6 @@
 [build]
   functions="server/functions"
-  command="yarn workspace client build"
+  build="yarn workspace client build"
   publish="client/build"
 
 [functions]
