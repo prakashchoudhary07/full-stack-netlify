@@ -4,7 +4,7 @@ import serverless from "serverless-http";
 const api = express();
 
 const router = Router();
-router.get("/hello", (req, res) => res.status(200).json({ message: "Successful hello world", statusCode: 200}));
+router.get("/hello", (req, res) => res.status(200).json({ message: "Successful hello world from new file", statusCode: 200}));
 
 api.use("/api/", router);
 
