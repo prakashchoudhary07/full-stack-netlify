@@ -1,0 +1,19 @@
+{
+  "name": "full-stack-netlify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "repository": "https://github.com/aps08/full-stack-netlify.git",
+  "author": "aps08",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn workspace server start\" \"yarn workspace client start\""
+  }
+}
